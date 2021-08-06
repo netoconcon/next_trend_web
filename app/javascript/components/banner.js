@@ -1,9 +1,24 @@
 import Typed from 'typed.js';
 
+
+
 const loadDynamicBannerText = () => {
+
   new Typed('#banner-typed-text', {
-    strings: ["GME to the moon", "Sell evertyhing", "Dogecoin to the moon"],
-    typeSpeed: 50,
+    strings: [
+    "[Reddit] GME to the moon ",
+    "[Reddit] GME to the moon 🟢",
+    "[Reddit] GME to the moon 🟢", 
+    "[Twitter] PFE vacines 🟢", 
+    "[Twitter] PFE vacines 🔴",
+    "[Reddit] GME to the moon 🟢", 
+    "[Twitter] PFE vacines 🟢", 
+    "[Twitter] PFE vacines 🟡",
+    "[WSJ] GME to the moon 🟢", 
+    "[Twitter] PFE vacines 🟢", 
+    "[FT] PFE vacines 🔴",
+    ],
+    typeSpeed: 120,
     loop: true
   });
 }
