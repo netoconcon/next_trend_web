@@ -19,16 +19,16 @@
 
   <h6><strong>Sentimental Index</strong></h6>
 
-  <%= column_chart @sentimental, colors: "#2195dd" %>
+  <%= column_chart @sentimental, color: "#2195dd" %>
 
 
   <br>
   <hr>
   <br>
 
-  <h6><strong>Closing Price Evolutionx</strong></h6>
+  <h6><strong>Closing Price Evolution</strong></h6>
 
-  <%= column_chart @close %>
+  <%= area_chart @close %>
 
   <br>
   <hr>
@@ -52,7 +52,16 @@
     {name: "Forecast", data: @forecast, color: "#2195dd"},
   ], legend: "bottom", min: 500, max: 700 %>
 
+  <br>
+  <hr>
+  <br>
+  <h6><strong>Yield Curve Backtest for 30 days</strong></h6>
 
+
+    <%= line_chart [
+    {name: "Predictions", data: @y_pred, color: "#00b99b"},
+    {name: "Real", data: @y_real, color: "#2195dd"},
+  ], legend: "bottom" %>
 
 </div>
 
