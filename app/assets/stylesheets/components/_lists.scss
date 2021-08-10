@@ -32,3 +32,10 @@
    background-color: rgba(#E45D60, 1); 
   }
 }
+
+.back-yellow{
+  background-color: rgba(#F4B014, 0.4);
+  &:hover{
+   background-color: rgba(#F4B014, 1); 
+  }
+}
