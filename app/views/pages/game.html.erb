@@ -1,0 +1,55 @@
+<br>
+<div class="container">
+  <h1>Game Stop</h1>
+
+  <br>
+
+  <h6><strong>Feeling Evolution</strong></h6>
+
+  <%= column_chart [
+  {name: "Positive", data: @positive, color: "#00b99b"},
+  {name: "Negative", data: @negative, color: "#E45D60"},
+  {name: "Neutral", data: @neutral, color: "#cc8e33"}
+], legend: "bottom" %>
+
+  
+  <br>
+  <hr>
+  <br>
+
+  <h6><strong>Sentimental Index</strong></h6>
+
+  <%= column_chart @sentimental, color: "#2195dd" %>
+
+
+  <br>
+  <hr>
+  <br>
+
+  <h6><strong>Closing Price Evolution</strong></h6>
+
+  <%= area_chart @close %>
+
+  <br>
+  <hr>
+  <br>
+
+  <h6><strong>Predictions</strong></h6>
+
+    <%= area_chart [
+    {name: "Real", data: @close, color: "#00b99b"},
+    {name: "Forecast", data: @forecast, color: "#2195dd"},
+  ], legend: "bottom" %>
+
+  <br>
+  <hr>
+  <br>
+  <h6><strong>Yield Curve Backtest for 30 days</strong></h6>
+
+
+    <%= line_chart [
+    {name: "Predictions", data: @y_pred, color: "#00b99b"},
+    {name: "Real", data: @y_real, color: "#2195dd"},
+  ], legend: "bottom" %>
+
+</div>
