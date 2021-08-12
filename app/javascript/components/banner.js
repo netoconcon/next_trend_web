@@ -6,13 +6,13 @@ const loadDynamicBannerText = () => {
 
   new Typed('#banner-typed-text', {
     strings: [
-    "[Reddit] GME to the moon ...",
-    "[Reddit] GME to the moon .",
+    "[Reddit] GME to the moon ",
+    "[Reddit] GME to the moon ",
     "[Reddit] GME to the moon 🟢",
     "[Reddit] GME to the moon 🟢",
 
-    "[Yahoo] Apple Suppliers Could Benefit From New iPhone Models ...",
-    "[Yahoo] Apple Suppliers Could Benefit From New iPhone Models .",
+    "[Yahoo] Apple Suppliers Could Benefit From New iPhone Models ",
+    "[Yahoo] Apple Suppliers Could Benefit From New iPhone Models ",
     "[Yahoo] Apple Suppliers Could Benefit From New iPhone Models 🟢",
     "[Yahoo] Apple Suppliers Could Benefit From New iPhone Models 🟢",
 
